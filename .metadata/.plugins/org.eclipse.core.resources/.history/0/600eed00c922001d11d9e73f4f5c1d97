@@ -1,0 +1,96 @@
+package banking;
+
+public class BankAccount {
+	
+	private long accountNum;
+	private int custId;
+	private double balance;
+	private String type;
+	
+	
+
+	@Override
+	public String toString() {
+		return "BankAccount [accountNum=" + accountNum + ", custId=" + custId + ", balance=" + balance + ", type="
+				+ type + "]";
+	}
+
+
+
+	public long getAccountNum() {
+		return accountNum;
+	}
+
+
+
+	public void setAccountNum(long accountNum) {
+		this.accountNum = accountNum;
+	}
+
+
+
+	public String getCustId() {
+		return custId;
+	}
+
+
+
+	public void setCustId(String custId) {
+		this.custId = custId;
+	}
+
+
+
+	public double getBalance() {
+		return balance;
+	}
+
+
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+
+
+	public String getType() {
+		return type;
+	}
+
+
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public BankAccount() {
+		accountNum=1111;
+		custId=2222;
+		type="Saving";
+		balance=0;
+}
+
+
+	public BankAccount(long accountNum, String custId, double balance, String type) {
+		super();
+		this.accountNum = accountNum;
+		this.custId = custId;
+		this.balance = balance;
+		this.type = type;
+	}
+
+
+
+	public double deposit(double amount)
+	{
+		balance=balance+amount;
+		return balance;
+	}
+	
+	public double withdraw(double amount)
+	{
+		balance=balance-amount;
+		return balance;
+	}
+
+}

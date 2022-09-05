@@ -1,0 +1,18 @@
+package assignment198;
+
+public class Address {
+	public String data;
+	public Address(String data) {
+		// TODO Auto-generated constructor stub
+	}
+	public Address() {
+		// TODO Auto-generated constructor stub
+	}
+	public void address(String data) throws InterruptedException {
+		Thread current = Thread.currentThread();
+		this.data = data;
+		System.out.println(this.data+"\n");
+		Thread.sleep(2000);
+	}
+
+}

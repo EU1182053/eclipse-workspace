@@ -1,0 +1,69 @@
+package objectarray;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		Scanner sc = new Scanner(System.in);
+
+		
+		int ch;
+		do {
+			System.out.println(
+					"1.Search by id\n2.Search by Source\n3.Search by destination\n4.Search by Line\n5.Search by any Custom station\n6.Search by Sorce and Destination7.Back");
+			ch = sc.nextInt();
+			switch (ch) {
+
+			case 1:
+				System.out.println("Enter id of the train...");
+				int id = sc.nextInt();
+				
+				Operation op = new Operation();
+				LocalTrain searchById = op.searchById(id);
+				System.out.println(searchById);
+				
+				break;
+
+			case 2:
+				System.out.println("Search train by source...");
+				String src = sc.next();
+				
+				op = new Operation();
+				LocalTrain searchBySource = op.searchBySource(src);
+				System.out.println(searchBySource);
+				break;
+
+			case 3:
+				System.out.println("Search train by destination ...");
+				String destn = sc.next();
+				break;
+
+			case 4:
+				System.out.println("Search train by Train Type....");
+				String trainType = sc.next();
+				break;
+
+			case 5:
+				System.out.println("Search train which halts at station given by user...");
+				String station = sc.next();
+				break;
+				
+			case 6:
+				System.out.println("Search trains by source and destination...");
+				String srcDestn = sc.next();
+				break;
+
+			default:
+				break;
+
+			}
+
+		} while (ch != 7);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package assignment198;
+
+public class Child1 extends Thread {
+	
+	public Child1(){}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+		
+	}
+	
+}

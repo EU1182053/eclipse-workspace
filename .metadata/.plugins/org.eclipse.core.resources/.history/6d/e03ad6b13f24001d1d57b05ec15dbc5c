@@ -1,0 +1,8 @@
+package assignment198;
+
+public class Address {
+	public void address(String data) {
+		
+	}
+
+}

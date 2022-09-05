@@ -1,0 +1,10 @@
+package producerconsumer;
+
+public class ProducerThread extends Thread {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+}

@@ -1,0 +1,14 @@
+package assignment198;
+
+public class Parent {
+	public static void main(String[] args) {
+		Thread mainThread = Thread.currentThread();
+		System.out.println(mainThread);
+		
+		String address = "Virar";
+		mainThread.setName("Parent");
+		mainThread.setPriority(Thread.MAX_PRIORITY);
+		System.out.print(mainThread.getName()+""+mainThread.getPriority());
+	}
+
+}

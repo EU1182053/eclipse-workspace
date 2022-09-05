@@ -1,0 +1,10 @@
+package bubblesort;
+
+import insertionsort.HashSet;
+
+public class HashSetSort {
+
+	public static void main(String[] args) {
+		HashSet<Integer> set = new HashSet<Integer>();
+	}
+}

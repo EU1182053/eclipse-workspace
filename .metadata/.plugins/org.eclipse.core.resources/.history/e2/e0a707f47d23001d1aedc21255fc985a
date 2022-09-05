@@ -1,0 +1,9 @@
+package producerconsumer;
+
+public class Factory {
+
+	private volatile int product=0;
+	private volatile boolean flag=false;
+	
+	
+}

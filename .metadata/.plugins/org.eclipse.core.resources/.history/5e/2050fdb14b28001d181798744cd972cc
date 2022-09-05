@@ -1,0 +1,24 @@
+package assignment248;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Assignment248 {
+
+	public static void main(String[] args) {
+		String data = "This is the demo of print writer.";
+		try {
+			
+			PrintWriter output = new PrintWriter("output.txt");
+			
+			output.print(data);
+			System.out.println(data);
+			output.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}

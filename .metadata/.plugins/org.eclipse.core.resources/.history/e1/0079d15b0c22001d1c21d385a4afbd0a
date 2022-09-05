@@ -1,0 +1,61 @@
+package objectarray;
+
+
+public class Operation {
+
+	String[] stops1 = { "Virar", "Borivali", "Andheri" };
+	LocalTrain lt1 = new LocalTrain(1090, "Virar", "Churchgate", "Western", stops1);
+
+	String[] stops2 = { "Virar", "Bhayandar", "Borivali" };
+	LocalTrain lt2 = new LocalTrain(1090, "Virar", "Borivali", "Western", stops2);
+
+	String[] stops3 = { "Kalyan", "Thane", "Kurla", "Dadar" };
+	LocalTrain lt3 = new LocalTrain(1090, "Kalyan", "Dadar", "Central", stops3);
+
+	String[] stops4 = { "Thane", "Rabale", "Ghansoli", "Vashi" };
+	LocalTrain lt4 = new LocalTrain(1090, "Thane", "Vashi", "Harbour", stops4);
+
+	String[] stops5 = { "Virar", "Bhayandar", "Borivali", "Dadar", "Mumbai Central", "Churchgate" };
+	LocalTrain lt5 = new LocalTrain(1090, "Virar", "Dadar", "Western", stops5);
+
+	
+	
+	LocalTrain ltArray[] = {lt1, lt2, lt3, lt4, lt5};
+	public LocalTrain searchById(int id) {
+		LocalTrain train = null;
+		for(LocalTrain local: ltArray) {
+			if(local.getId()==id) {
+				train = local;
+				break;
+			}
+		}
+		return train;
+	}
+	
+	public void    searchBySource(String source) {
+		LocalTrain train = null;
+		for(LocalTrain local: ltArray) {
+			
+			if(local.getSource()==source) {
+				System.out.println(local);
+				
+			}
+		}
+		
+	}
+	
+	public LocalTrain searchByDestination(LocalTrain destn) {
+		return destn;
+	}
+	
+	public LocalTrain searchBySourceAndDestination(LocalTrain srcdestn) {
+		return srcdestn;
+	}
+	public LocalTrain searchByLine(LocalTrain line) {
+		return line;
+	}
+	
+	public LocalTrain searchByStation(LocalTrain station) {
+		return station;
+	}
+}

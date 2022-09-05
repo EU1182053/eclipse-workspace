@@ -1,0 +1,36 @@
+package trycatch;
+
+import java.util.Scanner;
+
+public class ATM {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int machineBalance, accountBalance, pin, deposit, withdraw, name, type, accountNumber, ch;
+		
+		do {
+			System.out.println("1.Check Balace\n2.Generate Pin\n3.Deposit money\n4.Withdraw Money");
+			ch = sc.nextInt();
+			switch(ch) {
+			
+			case 1:
+				break;
+			case 2:
+				break;
+				
+			case 3:
+				break;
+				
+			case 4:
+				break;
+				
+			case 5:
+				break;
+			default:
+				break;
+			}
+		} while(ch<6);
+	}
+
+}

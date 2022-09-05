@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;java training&apos;&#x0D;&#x0A;- Original project: &apos;java training&apos;&#x0D;&#x0A;- Original element: &apos;java training/src/com.tutorialspoint.inheritance.hr.model&apos;" description="Delete element" element1="/src&lt;com.tutorialspoint.inheritance.hr.model" element2="/src&lt;com.tutorialspoint.inheritance.hr" element3="/src&lt;com.tutorialspoint.inheritance" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1660122855818" subPackages="false" version="1.0"/>
+</session>

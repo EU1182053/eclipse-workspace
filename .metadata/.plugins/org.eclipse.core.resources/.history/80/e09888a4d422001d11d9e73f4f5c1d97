@@ -1,0 +1,8 @@
+package banking;
+
+public class BankDemo {
+public static void main(String[] args) {
+	DepositThread dthread = new DepositThread();
+	
+}
+}

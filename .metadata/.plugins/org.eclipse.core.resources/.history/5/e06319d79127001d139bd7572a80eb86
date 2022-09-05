@@ -1,0 +1,29 @@
+package connection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class MyConnection {
+
+	
+	public void connect() throws SQLException {
+		// we write a logic to connect to mysql database
+		Connection connection=null;
+		String url="jdbc:mysql://localhost:3306/demo";
+		String username="root";
+		String password="root";
+		connection=DriverManager.getConnection(url,username,password);
+		System.out.println("Connection established.");
+	}
+	
+	public static void main(String[] args) {
+		MyConnection c = new MyConnection();
+		try {
+			c.connect();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

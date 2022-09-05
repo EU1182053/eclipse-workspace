@@ -1,0 +1,37 @@
+package assignment198;
+
+public class Child1 extends Thread {
+	
+	public Child1(){}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		Thread child1 = Thread.currentThread();
+		System.out.println(child1+"thread started.");
+		
+		child1.setName("child-1");
+		child1.setPriority(Thread.MAX_PRIORITY-2);
+		
+		System.out.println(child1.getName()+" thread started. With priority "+child1.getPriority());
+		
+		Thread child2 = Thread.currentThread();
+		
+		child2.setName("child-2");
+		child2.setPriority(Thread.MAX_PRIORITY-1);
+		
+		System.out.println(child2.getName()+" thread started. With priority "+child2.getPriority());
+		Address add = new Address();
+		try {
+			add.address("Western Line");
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
+	
+}

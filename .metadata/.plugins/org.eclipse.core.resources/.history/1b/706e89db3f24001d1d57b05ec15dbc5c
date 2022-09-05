@@ -1,0 +1,9 @@
+package assignment198;
+
+public class Address {
+	public String data;
+	public void address(String data) {
+		this.data = data;
+	}
+
+}

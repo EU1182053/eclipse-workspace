@@ -1,0 +1,28 @@
+package objectarray;
+
+public class Operation {
+
+	public LocalTrain searchById(LocalTrain id) {
+		
+		return id;
+	}
+	
+	public LocalTrain searchBySource(LocalTrain source) {
+		return source;
+	}
+	
+	public LocalTrain searchByDestination(LocalTrain destn) {
+		return destn;
+	}
+	
+	public LocalTrain searchBySourceAndDestination(LocalTrain srcdestn) {
+		return srcdestn;
+	}
+	public LocalTrain searchByLine(LocalTrain line) {
+		return line;
+	}
+	
+	public LocalTrain searchByStation(LocalTrain station) {
+		return station;
+	}
+}
