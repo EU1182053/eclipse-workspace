@@ -22,45 +22,42 @@ public class Main {
 
 			case 1:
 
-				// Get the Account Number
+				// deposit
 				try {
-					System.out.println("Enter your Account Number.");
-					accountNumber = sc.nextInt();
+					
+					
+						boolean depositMoney = crud.depositMoney();
 
-					
-
-					
-					
-					
-						boolean depositMoney1 = crud.depositMoney(accountNumber);
-
-						System.out.println("Account balance is: " + depositMoney1);
+						System.out.println("Query executed: " + depositMoney);
 					
 					
 
 				} catch (Exception e) {
 					// TODO: handle exception
+					e.printStackTrace();
 				}
 
 			case 2:
-				// Generate PIN
+				// Withdraw
 				try {
-					System.out.println("Enter your Account Number.");
-					accountNumber = sc.nextInt();
+					
+					boolean withdrawMoney = crud.withdrawMoney();
+					System.out.println("Query executed: "+ withdrawMoney);
 
 					
 				} catch (Exception e) {
 					// TODO: handle exception
+					e.printStackTrace();
 				}
 				break;
 
 			case 3:
-				// Deposit Money
+				// Transfer Money
 				try {
 
-					System.out.println("Enter your Account Number.");
-					accountNumber = sc.nextInt();
-
+					boolean transferMoney = crud.transferMoney();
+					
+					System.out.println("Query executed: "+ transferMoney);
 				}
 					 catch (Exception e) {
 						// TODO: handle exception
@@ -70,7 +67,7 @@ public class Main {
 				break;
 
 			case 4:
-				// Withdraw Money
+				// account details
 				try {
 
 					System.out.println("Enter your Account Number.");
